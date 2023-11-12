@@ -5,7 +5,7 @@ const Introduction = () => {
         <div className='mt-10'>
             <div className='container mx-auto'>
                 <div className='flex-shrink-0'>
-                    <img className='h-auto w-1/4 rounded-full border-2 border-black' src="/images/Nolu.png" alt="cartoon of me" />
+                    <img className='h-auto w-1/4 rounded-full border-2 border-black' src="/src/assets/images/Nolu.png" alt="cartoon of me" />
                     <div className='border-4 border-[#FF55BB]'>
                         <p className='text-lg leading-7 text-center'>I am Nolubabalo Maxazana, a self-driven software developer passionate about both frontend and full-stack development.
                             My coding journey began independently, and it was further enriched through a transformative experience at a Python BootCamp organized by GirlCode ZA.
