@@ -5,7 +5,7 @@ const Links = () => {
     return (
         <div>
             <div className='container mx-auto'>
-                <h2 className='text-xl p-8'>SOCIAL MEDIA</h2>
+                <h2 className='text-xl mt-8 mb-8'>SOCIAL MEDIA</h2>
                 <div className='flex pb-8'>
                     <SocialIcon network="github" url="https://github.com/Nolu-M" className='mr-6' />
                     <SocialIcon network="linkedin" url="https://github.com/Nolu-M" className='mr-6' />
