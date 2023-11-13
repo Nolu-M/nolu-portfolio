@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <section className=''>
+        <section className='bg-purple'>
             <div className='container mx-auto'>
                 <div className='flex justify-between pt-4'>
                     <h1>Nolubabalo Maxazana</h1>

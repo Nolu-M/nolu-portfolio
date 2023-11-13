@@ -6,9 +6,12 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
+      colors: {
+        'purple': '#7E22CE '
+      }
+      /*backgroundImage: {
         'background': "url('/images/background.jpg')",
-      },
+      },*/
     },
   },
   plugins: [],
