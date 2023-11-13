@@ -2,11 +2,13 @@ import React from 'react'
 
 const Introduction = () => {
     return (
-        <div className='mt-10'>
+        <section className='mt-10'>
             <div className='container mx-auto'>
-                <div className='flex-shrink-0'>
-                    <img className='h-auto w-1/4 rounded-full border-2 border-black' src="/src/assets/images/Nolu.png" alt="cartoon of me" />
-                    <div className='border-4 border-[#FF55BB]'>
+                <div className='flex row col-lg-12 '>
+                    <div className='container col-lg-6'>
+                        <img className='h-auto w-1/4 rounded-full border-2 border-black' src="/src/assets/images/Nolu.png" alt="cartoon of me" />
+                    </div>
+                    <div className=' container col-lg-6'>
                         <p className='text-lg leading-7 text-center'>I am Nolubabalo Maxazana, a self-driven software developer passionate about both frontend and full-stack development.
                             My coding journey began independently, and it was further enriched through a transformative experience at a Python BootCamp organized by GirlCode ZA.
                             The BootCamp not only added valuable skills to my repertoire but also opened up new avenues of work and possibilities in the world of programming.
@@ -16,7 +18,7 @@ const Introduction = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

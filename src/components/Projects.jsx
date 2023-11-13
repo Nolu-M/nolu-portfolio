@@ -2,7 +2,7 @@ import React from 'react'
 
 const Projects = () => {
     return (
-        <div>
+        <section>
             <div className='container mx-auto'>
                 <h2 className='mb-16 mt-16 text-xl'>PROJECTS</h2>
                 <div className='flex'>
@@ -15,6 +15,7 @@ const Projects = () => {
                         </a>
                         <a className='p-4 inline-block  perspective-lg transition-transform transform hover:translate-x-2 hover:shadow-lg' href="https://girlcode-careers.onrender.com/">
                             <img src="./src/assets/images/job-listing.png" alt="job listing website" className='rounded-2xl' />
+                            <p className=''>A job listing website that was created using </p>
                         </a>
                         <a className='p-4 inline-block  perspective-lg transition-transform transform hover:translate-x-2 hover:shadow-lg' href="https://nolum-blackjack-game.netlify.app/">
                             <img src="./src/assets/images/blackjack.jpg" alt="blackjack app" className='rounded-2xl' />
@@ -27,8 +28,8 @@ const Projects = () => {
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
+            </div >
+        </section >
     )
 }
 

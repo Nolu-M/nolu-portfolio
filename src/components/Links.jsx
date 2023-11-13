@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons'
 
 const Links = () => {
     return (
-        <div>
+        <section>
             <div className='container mx-auto'>
                 <h2 className='text-xl mt-8 mb-8'>SOCIAL MEDIA</h2>
                 <div className='flex pb-8'>
@@ -14,7 +14,7 @@ const Links = () => {
                     <SocialIcon network="email" url="mailto:nolubabalomaxazana@gmail.com" className='mr-6' />
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

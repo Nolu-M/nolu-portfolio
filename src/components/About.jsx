@@ -3,7 +3,7 @@ import MyCV from '../assets/MaxazanaNolubabalo CV.pdf';
 
 const About = () => {
     return (
-        <div>
+        <section>
             <div className='container mx-auto'>
                 <div>
                     <h3 className='mb-8'>Technologies</h3>
@@ -25,7 +25,7 @@ const About = () => {
                     <a className='inline-block p-4 bg-[#7E22CE] text-[#fff] rounded-md' href={MyCV} target="_blank" rel="noopener noreferrer">Download CV</a>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 

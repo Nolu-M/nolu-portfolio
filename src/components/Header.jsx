@@ -2,7 +2,7 @@ import React from 'react'
 
 const Header = () => {
     return (
-        <div className=''>
+        <section className=''>
             <div className='container mx-auto'>
                 <div className='flex justify-between pt-4'>
                     <h1>Nolubabalo Maxazana</h1>
@@ -13,7 +13,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
