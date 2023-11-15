@@ -3,7 +3,7 @@ import MyCV from '../assets/MaxazanaNolubabalo CV.pdf';
 
 const Introduction = () => {
     return (
-        <section className='bg-purple h-auto'>
+        <section className=''>
             <div className='container mx-auto'>
                 <div className='flex row col-lg-12 '>
                     <div className='container col-lg-6'>
@@ -17,7 +17,7 @@ const Introduction = () => {
                         </div>
                     </div>
                     <div className='container col-lg-6'>
-                        <img className='h-full w-full ' src="/src/assets/images/nolum.png" alt="cartoon of me" />
+                        <img className='h-full w-full rounded-lg ' src="/src/assets/images/nolum.png" alt="cartoon of me" />
                     </div>
                 </div>
             </div>

@@ -7,11 +7,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        'purple': '#7E22CE '
-      }
-      /*backgroundImage: {
-        'background': "url('/images/background.jpg')",
-      },*/
+        'purple': '#7E22CE',
+        'gray': '#d1d5db'
+      },
+      backgroundImage: {
+        'background': "url('assets/images/bg-hero.jpg')",
+      },
     },
   },
   plugins: [],
