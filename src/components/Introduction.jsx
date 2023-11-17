@@ -3,7 +3,7 @@ import MyCV from '../assets/MaxazanaNolubabalo CV.pdf';
 
 const Introduction = () => {
     return (
-        <section className=''>
+        <section className='mt-20'>
             <div className='container mx-auto'>
                 <div className='flex row col-lg-12 '>
                     <div className='container col-lg-6'>

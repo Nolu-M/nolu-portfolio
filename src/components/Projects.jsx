@@ -2,9 +2,9 @@ import React from 'react'
 
 const Projects = () => {
     return (
-        <section className=''>
+        <section id='projects'>
             <div className='container mx-auto'>
-                <h2 className='pt-16 pb-8 text-3xl text-center text-purple'>PROJECTS</h2>
+                <h2 className='pt-16 pb-8 text-5xl text-center text-purple font-primary'>PROJECTS</h2>
                 <div className=''>
                     <div className='grid grid-cols-2 mt-8 pb-8'>
                         <a className='p-4 inline-block perspective-lg transition-transform transform hover:translate-x-4 hover:shadow-lg relative group' href="https://nolu-m-expense-tracker.netlify.app/">

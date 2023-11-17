@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'primary': ['Ubuntu', 'sans-serif'],
+        'secondary': ['Raleway', 'sans-serif']
+      },
       colors: {
         'purple': '#7E22CE',
         'gray': '#d1d5db'

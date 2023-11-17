@@ -9,12 +9,14 @@ import About from '../components/About'
 
 const Home = () => {
     return (
-        <div className={`bg-background`}>
-            <Header />
-            <Introduction />
-            <Projects />
-            <About />
-            <Links />
+        <div className='conainer mx-auto'>
+            <div className={`bg-background`} >
+                <Header />
+                <Introduction />
+                <Projects />
+                <About />
+                <Links />
+            </div>
         </div>
     )
 }
