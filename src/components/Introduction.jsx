@@ -1,4 +1,3 @@
-import React from 'react'
 import MyCV from '../assets/MaxazanaNolubabalo CV.pdf';
 
 const Introduction = () => {
