@@ -13,8 +13,8 @@ const Home = () => {
             <div className={`bg-background`} >
                 <Header />
                 <Introduction />
-                <Projects />
                 <About />
+                <Projects />
                 <Links />
             </div>
         </div>
