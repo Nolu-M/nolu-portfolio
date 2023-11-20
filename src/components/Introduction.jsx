@@ -12,7 +12,8 @@ const Introduction = () => {
                             <h2 className='text-4xl text-white font-medium'>and I am a software developer.</h2>
                         </div>
                         <div className='flex mb-10 mt-10'>
-                            <a className='p-4 bg-[#5F57FF] text-[#fff] rounded-md' href={MyCV} target="_blank" rel="noopener noreferrer">Download CV</a>
+                            <a className='p-4 bg-[#5F57FF] text-[#fff] rounded-md' href={MyCV} target="_blank" rel="noopener noreferrer">
+                                <span className="material-symbols-outlined">clinical_notes</span>Download Resume</a>
                         </div>
                     </div>
                     <div className='container col-lg-6'>
