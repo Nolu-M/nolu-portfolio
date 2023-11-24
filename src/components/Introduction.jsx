@@ -6,7 +6,7 @@ const Introduction = () => {
             <div className='container mx-auto'>
                 <div className='flex row col-lg-12 '>
                     <div className='container col-lg-6'>
-                        <img className='h-full w-full rounded-lg ' src="/src/assets/images/nolum.png" alt="cartoon of me" />
+                        <img className='h-full w-full rounded-lg ' src="/src/assets/nolum.png" alt="picture of me" />
                     </div>
                     <div className='container col-lg-6'>
                         <div className='mt-10 inline-block'>
