@@ -1,4 +1,4 @@
-import MyCV from '../assets/MaxazanaNolubabalo CV.pdf';
+import MyCV from '../assets/NMaxazanaCV.pdf';
 
 const Introduction = () => {
     return (
@@ -12,7 +12,7 @@ const Introduction = () => {
                         <div className='mt-10 inline-block'>
                             <h1 className='text-6xl text-white font-extrabold'>
                                 Hi, my name <br />is Nolubabalo Maxazana</h1>
-                            <h2 className='text-4xl text-white font-medium'>and I am a software developer.</h2>
+                            <h2 className='text-4xl text-white font-medium mt-4'>and I am a software developer.</h2>
                         </div>
                         <div className='flex mb-10 mt-10'>
                             <a className='p-4 bg-[#5F57FF] text-[#fff] rounded-md' href={MyCV} target="_blank" rel="noopener noreferrer">
