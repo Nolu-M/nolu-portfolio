@@ -42,13 +42,6 @@
         flex-direction: column-reverse;
     }
 
-    .container {
-        width: 100%;
-    }
-
-    .container>div {
-        width: 100%;
-    }
 }
 
 
