@@ -6,7 +6,42 @@
 @tailwind utilities;
 
 
+.links {
+    display: flex;
+    flex-direction: row;
+}
 
+@media screen and (max-width: 1020px) {
+    .links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        /* Adjust as needed based on your design */
+        left: 0;
+        box-shadow: #6d4d6e(0, 0, 0, 0.1);
+        z-index: 1;
+        color: #6d4d6e;
+    }
+
+    .links.show-menu {
+        display: flex;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    .menu-button {
+        display: none;
+    }
+
+    .links {
+        display: flex;
+    }
+}
 
 a:hover .text-white {
     display: block;
