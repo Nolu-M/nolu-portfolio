@@ -5,6 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
+.project {
+    @apply p-4 inline-block transition-transform transform hover:translate-x-4 hover:shadow-lg relative
+}
+
+.info {
+    @apply absolute bottom-full left-1/2 transform -translate-x-1/2 hidden bg-black bg-opacity-75 text-white p-4 rounded-md transition-opacity duration-300 group-hover:opacity-100
+}
+
+.heading {
+    @apply text-5xl text-center text-purple font-primary
+}
+
 
 @media screen and (max-width: 1020px) {
     .links {
@@ -39,14 +51,6 @@
     }
 }
 
-.container {
-    max-width: 100%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 @media screen and (min-width: 1021px) {
     .menu-button {
@@ -56,19 +60,4 @@ img {
     .links {
         display: flex;
     }
-}
-
-
-
-
-.project {
-    @apply p-4 inline-block transition-transform transform hover:translate-x-4 hover:shadow-lg relative
-}
-
-.info {
-    @apply absolute bottom-full left-1/2 transform -translate-x-1/2 hidden bg-black bg-opacity-75 text-white p-4 rounded-md transition-opacity duration-300 group-hover:opacity-100
-}
-
-.heading {
-    @apply text-5xl text-center text-purple font-primary
 }
