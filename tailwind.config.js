@@ -8,7 +8,8 @@ export default {
     extend: {
       fontFamily: {
         'primary': ['Ubuntu', 'sans-serif'],
-        'secondary': ['Raleway', 'sans-serif']
+        'secondary': ['Raleway', 'sans-serif'],
+        'tertiary': ['Dancing Script', 'cursive']
       },
       colors: {
         'purple': '#7E22CE',
