@@ -24,10 +24,10 @@ const Header = () => {
                             menu
                         </span>
                     </button>
-                    <div className={`links flex flex-row text-[#6d4d6e] ${showMenu ? 'show-menu' : ''}`}>
-                        <a href='#about' className='mt-4 mr-4 shadow-lg hover:shadow-[#6d4d6e] p-2 font-bold'>ABOUT</a>
-                        <a href='#projects' className='mt-4 mr-4 shadow-lg hover:shadow-[#6d4d6e] p-2 font-bold'>PROJECTS</a>
-                        <a href='#links' className='mt-4 shadow-lg hover:shadow-[#6d4d6e] p-2 font-bold'>LINKS</a>
+                    <div className={`links flex flex-row text-white ${showMenu ? 'show-menu' : ''}`}>
+                        <a href='#about' className='mt-4 mr-6 rounded-full border-white border-2 px-8 py-4 font-bold'>ABOUT</a>
+                        <a href='#projects' className='mt-4  mr-6 rounded-full border-white border-2 px-8 py-4 font-bold'>PROJECTS</a>
+                        <a href='#links' className='mt-4  mr-6 rounded-full border-white border-2 px-8 py-4 font-bold'>LINKS</a>
                     </div>
                 </div>
             </div>

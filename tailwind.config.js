@@ -16,7 +16,7 @@ export default {
         'gray': '#d1d5db'
       },
       backgroundImage: {
-        'background': "url('assets/images/bg-hero.jpg')",
+        'background': "url('assets/images/bg.jpg')",
       },
     },
   },
