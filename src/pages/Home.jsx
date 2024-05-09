@@ -9,7 +9,7 @@ import About from '../components/About'
 const Home = () => {
     return (
         <div className='conainer mx-auto'>
-            <div className={`bg-background pl-6 pr-6`} >
+            <div className={`bg-background pl-6 pr-6 h-lvh`} >
                 <Header />
                 <Introduction />
                 <About />

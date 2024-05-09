@@ -12,7 +12,7 @@ const Header = () => {
             <div className='container mx-auto pl-8 pr-8'>
                 <div className='flex justify-between pt-4 align-center'>
                     <a href="#home"
-                        className='text-white font-tertiary text-3xl hover:text-[#6d4d6e]'>Nolubabalo Maxazana
+                        className='text-white font-tertiary text-3xl hover:text-[#6d4d6e]'>1
                     </a>
                     <button
                         type='button'
