@@ -1,4 +1,4 @@
-import Header from '../components/Header'
+/*import Header from '../components/Header'*/
 import Introduction from '../components/Introduction'
 import Projects from '../components/Projects'
 import Links from '../components/Links'
@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className='conainer mx-auto'>
             <div className={`bg-background pl-6 pr-6 h-lvh`} >
-                <Header />
+                {/*<Header />*/}
                 <Introduction />
                 <About />
                 <Projects />

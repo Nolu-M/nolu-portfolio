@@ -34,7 +34,7 @@ html {
     @apply text-5xl text-center text-purple font-primary
 }
 
-*/
+
 
 @media screen and (max-width: 1020px) {
     .links {
@@ -71,4 +71,4 @@ html {
     .links {
         display: flex;
     }
-}
+}*/
