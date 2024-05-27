@@ -17,6 +17,12 @@ body {
   justify-content: start;
 }
 
+* {
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
 body,
 html {
   scroll-behavior: smooth;
