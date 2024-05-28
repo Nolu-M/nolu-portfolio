@@ -1,16 +1,36 @@
-import useTheme from "./useTheme";
+import { useState } from 'react';
+import useTheme from './useTheme';
 
 const ThemeSwitcher = () => {
-    const { switchTheme } = useTheme();
+  const { theme, switchTheme } = useTheme();
+  const [isTheme1, setIsTheme1] = useState(theme === 'theme1');
+
+  const toggleTheme = () => {
+    const newTheme = isTheme1 ? 'theme2' : 'theme1';
+    switchTheme(newTheme);
+    setIsTheme1(!isTheme1);
+  };
 
   return (
-    <div className='container mx-auto'>
-        <button onClick={() => switchTheme('theme1')} className="m-2 p-2 bg-blue-500 text-white rounded">Theme 1</button>
-        <button onClick={() => switchTheme('theme2')} className="m-2 p-2 bg-green-500 text-white rounded">Theme 2</button>
-        <button onClick={() => switchTheme('theme3')} className="m-2 p-2 bg-purple-500 text-white rounded">Theme 3</button>
-      
+    <div className="container mx-auto">
+      <label className="switch relative inline-block w-10 h-6 bg-gray-300 rounded-full mt-4 ml-4">
+        <input
+          type="checkbox"
+          onChange={toggleTheme}
+          checked={!isTheme1}
+          className="absolute opacity-0 w-0 h-0"
+        />
+        <div
+          className={`slider absolute top-0 left-0 bg-white w-6 h-6 rounded-full transition-transform duration-300 ${
+            isTheme1 ? 'translate-x-0' : 'translate-x-full'
+          }`}
+        ></div>
+      </label>
     </div>
-  )
-}
+  );
+};
 
-export default ThemeSwitcher
+export default ThemeSwitcher;
+
+
+
