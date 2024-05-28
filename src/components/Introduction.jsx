@@ -15,7 +15,7 @@ const Introduction = () => {
                 <div className="w-full h-full flex flex-col items-center
                 lg:items-start justify-center gap-4">
                     <h2 className="text-3xl lg:text-4xl text-black">Hello, It&apos;s me
-                        <span className="block tracking-wider text-2xl lg:text-4xl mt-4 text-white">
+                        <span className="block tracking-wider text-2xl lg:text-4xl mt-4 text-slate-200">
                             {" "}
                             Nolubabalo Maxazana
                         </span>
@@ -28,7 +28,7 @@ const Introduction = () => {
                         words={["a Developer..","a Scientist..", "a Musician..", "and a Web Designer.."]}/>
                     </h2>
 
-                    <p>
+                    <p className="text-base text-slate-200 mt-6 text-center lg:text-left">
                     Welcome to my web development portfolio! I&apos;m an inquisitive individual with a passion for both science and technology. 
                     I hold an Honours degree in Plant Pathology, building on my Bachelor of Science in Microbiology and Plant Pathology. 
                     My love for science extends beyond the lab, fueling my enthusiasm for tech and web development. 
