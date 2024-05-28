@@ -15,19 +15,32 @@ const Introduction = () => {
                 <div className="w-full h-full flex flex-col items-center
                 lg:items-start justify-center gap-4">
                     <h2 className="text-3xl lg:text-4xl text-black">Hello, It&apos;s me
-                    <span className="block tracking-wider text-2xl lg:text-4xl mt-4 text-white">Nolubabalo Maxazana</span></h2>
+                        <span className="block tracking-wider text-2xl lg:text-4xl mt-4 text-white">
+                            {" "}
+                            Nolubabalo Maxazana
+                        </span>
+                    </h2>
 
                     {/*typewriter*/}
-                    <h2 className="text-2xl lg:text-4xl text-black mt-4">And I&apos;m 
-                    <HeroTypeWriter/>
+                    <h2 className="text-2xl lg:text-4xl text-black mt-4">And I&apos;m{" "}
+                    <HeroTypeWriter 
+                        speed={100}
+                        words={["a Developer..","a Scientist..", "a Musician..", "and a Web Designer.."]}/>
                     </h2>
+
+                    <p>
+                    Welcome to my web development portfolio! I&apos;m an inquisitive individual with a passion for both science and technology. 
+                    I hold an Honours degree in Plant Pathology, building on my Bachelor of Science in Microbiology and Plant Pathology. 
+                    My love for science extends beyond the lab, fueling my enthusiasm for tech and web development. 
+                    When I&apos;m not coding, you can find me exploring different musical instruments, constantly seeking new ways to harmonize creativity and analytical thinking. Dive into my projects to see how I blend my scientific background with innovative web solutions.
+                    </p>
                 </div>
 
 
 
                 {/*Hero image section*/}
-                <div className="w-full h-full flex items-center justify-center 
-                lg:items-center">
+                <div className="w-full h-full flex items-start justify-center 
+                lg:item-center">
                     <motion.img
                     initial={{y : 0}}
                     animate ={{ y : [-10, 10, -10]}}

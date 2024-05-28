@@ -6,11 +6,12 @@ export default {
   ],
   theme: {
     extend: {
-      /*backgroundImage: {
-        'theme1': "url('/assets/images/pink-purple.jpg')",
-        'theme2': "url('/assets/images/bg-portfolio.jpg')",
-        'theme3': "url('/assets/images/bg.jpg')"
-      },*/
+      colors: {
+        primary: "#ff3385",
+        secondary: "#ff0066",
+        texlight: "#a7a7a7",
+        bgPrimary: "#020010",
+      },
     },
   },
   plugins: [],
