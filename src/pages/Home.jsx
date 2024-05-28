@@ -3,24 +3,19 @@ import Introduction from '../components/Introduction'
 import Projects from '../components/Projects'
 import Links from '../components/Links'
 import About from '../components/About'
-import { useTheme } from '../components/UseThemeContext';
+import  useTheme  from '../components/useTheme'
 import ThemeSwitcher from '../components/ThemeSwitcher'
+
 
 
 
 const Home = () => {
     const { theme } = useTheme();
 
-    const themeClasses = {
-        theme1: 'bg-blue-100 min-h-screen',
-        theme2: 'bg-green-100 min-h-screen',
-        theme3: 'bg-purple-100 min-h-screen',
-      };
-
     return (
-        <div className={themeClasses[theme]} >
+        <div className={`${theme} min-h-screen`} >
             <div className='conainer mx-auto'>
-                <div className={`bg-background pl-6 pr-6 h-lvh`} >
+                <div>
                     {/*<Header />*/}
                     <ThemeSwitcher />
                     <Introduction />

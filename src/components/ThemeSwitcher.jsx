@@ -1,4 +1,4 @@
-import { useTheme } from '../components/UseThemeContext';
+import useTheme from "./useTheme";
 
 const ThemeSwitcher = () => {
     const { switchTheme } = useTheme();

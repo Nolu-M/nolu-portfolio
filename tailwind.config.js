@@ -6,9 +6,11 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'background': "url('assets/images/pink-purple.jpg')",
-      },
+      /*backgroundImage: {
+        'theme1': "url('/assets/images/pink-purple.jpg')",
+        'theme2': "url('/assets/images/bg-portfolio.jpg')",
+        'theme3': "url('/assets/images/bg.jpg')"
+      },*/
     },
   },
   plugins: [],

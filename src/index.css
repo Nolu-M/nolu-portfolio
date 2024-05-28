@@ -1,4 +1,6 @@
+@import './themes.css';
 @import url('https://fonts.googleapis.com/css?family=Croissant+One:regular');
+
 
 @tailwind base;
 @tailwind components;
@@ -17,16 +19,13 @@ body {
   justify-content: start;
 }
 
-* {
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
 
-body,
-html {
+* {
   scroll-behavior: smooth;
 }
+
+
+
 
 /*.project {
     @apply p-4 inline-block transition-transform transform hover:translate-x-4 hover:shadow-lg relative
