@@ -5,6 +5,7 @@ import Links from '../components/Links'
 import About from '../components/About'
 import  useTheme  from '../components/useTheme'
 import ThemeSwitcher from '../components/ThemeSwitcher'
+import Header from '../components/Header'
 
 
 
@@ -18,6 +19,7 @@ const Home = () => {
                 <div>
                     {/*<Header />*/}
                     <ThemeSwitcher />
+                    <Header />
                     <Introduction />
                     <About />
                     <Projects />

@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import useTheme from './useTheme';
 
 const ThemeSwitcher = () => {
   const { theme, switchTheme } = useTheme();
   const [isTheme1, setIsTheme1] = useState(theme === 'theme1');
+
+   useEffect(() => {
+    setIsTheme1(theme === 'theme1');
+  }, [theme]);
 
   const toggleTheme = () => {
     const newTheme = isTheme1 ? 'theme2' : 'theme1';

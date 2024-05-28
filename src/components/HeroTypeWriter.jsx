@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import PropTypes from "prop-types";
 
 
-const HeroTypeWriter = ({words, speed}) => {
+const HeroTypeWriter = ({words, speed, theme}) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currenttext, setCurrenttext] = useState("");
   const currentWord = words[currentWordIndex];
@@ -35,7 +35,10 @@ const HeroTypeWriter = ({words, speed}) => {
 
   return (
     <div>
-      <span className="tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary mt-7">
+      <span
+        className={`tracking-wider text-transparent bg-clip-text bg-gradient-to-r 
+        ${theme === 'theme2' ? 'from-primary-green to-secondary-green' : 'from-primary-pink to-secondary-pink'}`}
+      >
         {currenttext}
       </span>
     </div>
@@ -45,6 +48,7 @@ const HeroTypeWriter = ({words, speed}) => {
 HeroTypeWriter.propTypes = {
   words: PropTypes.arrayOf(PropTypes.string).isRequired,
   speed: PropTypes.number.isRequired,
+  theme: PropTypes.string.isRequired,
 };
 
 export default HeroTypeWriter
