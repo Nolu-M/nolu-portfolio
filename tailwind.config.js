@@ -18,8 +18,28 @@ export default {
         texlight: "#a7a7a7",
         bgPrimary: "#020010",
       },
+      fontFamily: {
+        'raleway-bold': ['"Raleway"', 'sans-serif'],
+      },
+      fontWeight: {
+        '700': 700,
+      },
+      fontOpticalSizing: {
+        auto: 'auto',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        '.raleway-bold': {
+          fontFamily: '"Raleway", sans-serif',
+          fontOpticalSizing: 'auto',
+          fontWeight: 500,
+          fontStyle: 'normal',
+        },
+      });
+    },
+  ],
 }
 
