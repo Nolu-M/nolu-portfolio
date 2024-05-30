@@ -1,9 +1,14 @@
 import { motion } from "framer-motion"
 import Hero from "../assets/images/hero.png"
 import HeroTypeWriter from '../components/HeroTypeWriter'
+import useTheme from "./useTheme"
+
+
 
 
 const Introduction = () => {
+    const { theme } = useTheme(); // Use theme from context
+
     return (
         <section id="home" className=' flex items-center justify-center flex-col gap-12 relative'>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full'>
@@ -23,7 +28,8 @@ const Introduction = () => {
                     <h2 className="text-2xl lg:text-4xl text-black mt-4">And I&apos;m{" "}
                     <HeroTypeWriter 
                         speed={100}
-                        words={["a Developer..","a Scientist..", "a Musician..", "and a Web Designer.."]}/>
+                        words={["a Developer..","a Scientist..", "a Musician..", "and a Web Designer.."]}
+                        theme={theme}/>
                     </h2>
 
                     <p className="raleway-bold text-l text-slate-200 mt-6 text-center lg:text-left">
