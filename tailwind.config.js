@@ -9,11 +9,11 @@ export default {
       colors: {
         primary: {
           pink: "#ff3385", 
-          green: "#00cccc",
+          green: "#00cc99",
         },
         secondary: {
           pink: "#ff0066",
-          green: "#009999",
+          green: "#00b386",
         },
         texlight: "#a7a7a7",
         bgPrimary: "#020010",

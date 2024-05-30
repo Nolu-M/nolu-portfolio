@@ -28,7 +28,7 @@ const Introduction = () => {
                     <h2 className="text-2xl lg:text-4xl text-black mt-4">And I&apos;m{" "}
                     <HeroTypeWriter 
                         speed={100}
-                        words={["a Developer..","a Scientist..", "a Musician..", "and a Web Designer.."]}
+                        words={["a Developer..","a Scientist..", "a Musician..", "and a Web Designer"]}
                         theme={theme}/>
                     </h2>
 
