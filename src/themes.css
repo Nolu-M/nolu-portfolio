@@ -1,12 +1,12 @@
 /* src/themes.css */
 .theme1 {
-    background-image: url('./assets/images/pink-purple.jpg');
+    background-image: url('./assets/images/galaxy.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
   
   .theme2 {
-    background-image: url('./assets/images/bg-portfolio.jpg');
+    background-image: url('./assets/images/green.jpg');
     background-size: cover;
     background-repeat: no-repeat;
   }
