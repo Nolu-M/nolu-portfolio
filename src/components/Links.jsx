@@ -4,7 +4,7 @@ const Links = () => {
     return (
         <section id='links'>
             <div className='container mx-auto'>
-                <h2 className='text-5xl mt-8 mb-8 text-center text-purple font-primary'>SOCIAL MEDIA</h2>
+                <h2 className='text-5xl mt-8 mb-8 text-center text-purple font-primary'>Contact Me</h2>
                 <div className='flex justify-center pb-8'>
                     <SocialIcon network="github" url="https://github.com/Nolu-M" className='mr-6' />
                     <SocialIcon network="linkedin" url="https://www.linkedin.com/in/nolubabalo-maxazana-4327b168/" className='mr-6' />

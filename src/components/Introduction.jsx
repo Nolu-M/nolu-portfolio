@@ -1,9 +1,14 @@
 import { motion } from "framer-motion"
 import Hero from "../assets/images/hero.png"
 import HeroTypeWriter from '../components/HeroTypeWriter'
+import useTheme from "./useTheme"
+
+
 
 
 const Introduction = () => {
+    const { theme } = useTheme(); // Use theme from context
+
     return (
         <section id="home" className=' flex items-center justify-center flex-col gap-12 relative'>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full'>
@@ -11,7 +16,7 @@ const Introduction = () => {
 
                 {/*content section*/}
                 <div className="w-full h-full flex flex-col items-center
-                lg:items-start justify-center gap-4 pl-10 mt-8">
+                    lg:items-start justify-center gap-4 pl-10 mt-8">
                     <h2 className="text-3xl lg:text-4xl text-black">Hello, It&apos;s me
                         <span className="block tracking-wider text-2xl lg:text-4xl mt-4 text-slate-200">
                             {" "}
@@ -23,10 +28,11 @@ const Introduction = () => {
                     <h2 className="text-2xl lg:text-4xl text-black mt-4">And I&apos;m{" "}
                     <HeroTypeWriter 
                         speed={100}
-                        words={["a Developer..","a Scientist..", "a Musician..", "and a Web Designer.."]}/>
+                        words={["a Developer..","a Scientist..", "a Musician..", "and a Web Designer"]}
+                        theme={theme}/>
                     </h2>
 
-                    <p className="text-xl text-slate-200 mt-6 text-center lg:text-left">
+                    <p className="raleway-bold text-l text-slate-200 mt-6 text-center lg:text-left">
                     Welcome to my web development portfolio! I&apos;m an inquisitive individual with a passion for both science and technology. 
                     I hold an Honours degree in Plant Pathology, building on my Bachelor of Science in Microbiology and Plant Pathology. 
                     My love for science extends beyond the lab, fueling my enthusiasm for tech and web development. 
@@ -38,7 +44,7 @@ const Introduction = () => {
 
                 {/*Hero image section*/}
                 <div className="w-full h-full flex items-start justify-center 
-                lg:item-center">
+                    lg:item-center">
                     <motion.img
                     initial={{y : 0}}
                     animate ={{ y : [-10, 10, -10]}}
