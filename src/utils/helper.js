@@ -9,17 +9,12 @@ import {
   FaUser,
   FaYoutube,
 } from "react-icons/fa6";
-import {
-  ChatApp,
-  CodePenClone,
-  FreshJuiceUI,
-  ImageSharing,
-  OpenAI,
-  PixabayClone,
-  PortfolioFirebase,
-  RestaurantClone,
-  SocialMedia,
-} from "../assets";
+import ExpenseApp from '../assets/images/projects';
+import JobListing from '../assets/images/projects/job-listing.png';
+import PasswordGen from '../assets/images/projects/password-generator';
+
+
+
 
 export const Socials = [
   {
@@ -84,56 +79,21 @@ export const Menus = [
 export const ProjectsData = [
   {
     id: `food-${Date.now()}`,
-    name: "Single Food Restaurant",
-    imgSrc: RestaurantClone,
-    gitURL: "https://github.com/Vetrivel-VP",
+    name: "Expense App",
+    imgSrc: ExpenseApp,
+    gitURL: "https://github.com/nolu-m",
   },
   {
     id: `codepen-${Date.now()}`,
-    name: "CodePen Clone",
-    imgSrc: CodePenClone,
-    gitURL: "https://github.com/Vetrivel-VP",
+    name: "Job listing website",
+    imgSrc: JobListing,
+    gitURL: "https://github.com/nolu-m",
   },
   {
     id: `openai-${Date.now()}`,
-    name: "OpenAI",
-    imgSrc: OpenAI,
-    gitURL: "https://github.com/Vetrivel-VP",
+    name: "Password generator",
+    imgSrc: PasswordGen,
+    gitURL: "https://github.com/nolu-m",
   },
-  {
-    id: `chatapp-${Date.now()}`,
-    name: "Chat App Build",
-    imgSrc: ChatApp,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `imageSharing-${Date.now()}`,
-    name: "Image Sharing App",
-    imgSrc: ImageSharing,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `pixabayclone-${Date.now()}`,
-    name: "Pixabay Clone 2.0",
-    imgSrc: PixabayClone,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `freshjuiceui-${Date.now()}`,
-    name: "Fresh Juice UI Build",
-    imgSrc: FreshJuiceUI,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `socialmedia-${Date.now()}`,
-    name: "Social Media App",
-    imgSrc: SocialMedia,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
-  {
-    id: `portfoliofirebase-${Date.now()}`,
-    name: "Portfolio UI Fireabse",
-    imgSrc: PortfolioFirebase,
-    gitURL: "https://github.com/Vetrivel-VP",
-  },
+ 
 ];
