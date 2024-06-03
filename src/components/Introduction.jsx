@@ -17,7 +17,7 @@ const Introduction = () => {
                 {/*content section*/}
                 <div className="w-full h-full flex flex-col items-center
                     lg:items-start justify-center gap-4 pl-10 mt-8">
-                    <h2 className="text-3xl lg:text-4xl text-black">Hello, It&apos;s me
+                    <h2 className="text-3xl lg:text-4xl text-gray-400">Hello, It&apos;s me
                         <span className="block tracking-wider text-2xl lg:text-4xl mt-4 text-slate-200">
                             {" "}
                             Nolubabalo Maxazana
@@ -25,10 +25,10 @@ const Introduction = () => {
                     </h2>
 
                     {/*typewriter*/}
-                    <h2 className="text-2xl lg:text-4xl text-black mt-4">And I&apos;m{" "}
+                    <h2 className="text-2xl lg:text-4xl text-gray-400 mt-4">And I&apos;m{" "}
                     <HeroTypeWriter 
                         speed={100}
-                        words={["a Developer..","a Scientist..", "a Musician..", "and a Web Designer"]}
+                        words={["a Developer..","a Scientist..", "a Musician..", "a Web Designer"]}
                         theme={theme}/>
                     </h2>
 
