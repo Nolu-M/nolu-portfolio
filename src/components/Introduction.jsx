@@ -27,8 +27,8 @@ const Introduction = () => {
                     {/*typewriter*/}
                     <h2 className="text-2xl lg:text-4xl text-gray-400 mt-4">And I&apos;m{" "}
                     <HeroTypeWriter 
-                        speed={100}
-                        words={["a Developer..","a Scientist..", "a Musician..", "a Web Designer"]}
+                        speed={180}
+                        words={["Developer","Scientist", "Musician", "Web Designer"]}
                         theme={theme}/>
                     </h2>
 
@@ -51,7 +51,7 @@ const Introduction = () => {
                     transition={{
                         repeat: Infinity,
                         duration: 2,
-                        ease: "linear",
+                        ease: 'linear',
                     }}
                     src={Hero} className="w-1/2 h-auto object-contain"/>
 

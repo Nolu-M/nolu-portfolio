@@ -1,37 +1,50 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 
-
-const HeroTypeWriter = ({words, speed, theme}) => {
+const HeroTypeWriter = ({ words, speed, theme }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
-  const [currenttext, setCurrenttext] = useState("");
-  const currentWord = words[currentWordIndex];
+  const [currentText, setCurrentText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [charIndex, setCharIndex] = useState(0);
+
+  const prefix = "a ";
+  const currentWord = prefix + words[currentWordIndex];
+  const typingDelay = speed;
+  const deletingDelay = speed / 2;
+  const pauseBeforeDelete = 1000;
+  const pauseBeforeTyping = 500;
 
   useEffect(() => {
-    let charIndex = 0;
+    let timeout;
 
-    const typingInterval = setInterval(() => {
-      if(charIndex <= currentWord.length) {
-        setCurrenttext(currentWord.slice(0, charIndex));
-        charIndex++;
-      }else{
-        // word typed out, clear and move to next word
-        clearInterval(typingInterval);
-
-        setTimeout(() => {
-          setCurrentWordIndex((prevIndex) => 
-            prevIndex === words.length - 1 ? 0 : prevIndex + 1 
-        );
-        }, 1000);
+    const handleType = () => {
+      if (!isDeleting) {
+        if (charIndex < currentWord.length) {
+          setCurrentText(currentWord.slice(0, charIndex + 1));
+          setCharIndex(charIndex + 1);
+        } else {
+          timeout = setTimeout(() => setIsDeleting(true), pauseBeforeDelete);
+          return;
+        }
+      } else {
+        if (charIndex > prefix.length) {
+          setCurrentText(currentWord.slice(0, charIndex - 1));
+          setCharIndex(charIndex - 1);
+        } else {
+          setIsDeleting(false);
+          setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
+          timeout = setTimeout(() => setCharIndex(0), pauseBeforeTyping);
+          return;
+        }
       }
-    }, speed);
 
-    return () => {
-      clearInterval(typingInterval);
-    }
-  }, [currentWord, speed, words]);
+      timeout = setTimeout(handleType, isDeleting ? deletingDelay : typingDelay);
+    };
 
+    timeout = setTimeout(handleType, typingDelay);
 
+    return () => clearTimeout(timeout);
+  }, [charIndex, currentWord, isDeleting, typingDelay, deletingDelay, pauseBeforeDelete, pauseBeforeTyping, words.length]);
 
   return (
     <div>
@@ -39,11 +52,11 @@ const HeroTypeWriter = ({words, speed, theme}) => {
         className={`tracking-wider text-transparent bg-clip-text bg-gradient-to-r 
         ${theme === 'theme2' ? 'from-primary-green to-secondary-green' : 'from-primary-pink to-secondary-pink'}`}
       >
-        {currenttext}
+        {currentText}
       </span>
     </div>
-  )
-}
+  );
+};
 
 HeroTypeWriter.propTypes = {
   words: PropTypes.arrayOf(PropTypes.string).isRequired,
@@ -51,4 +64,4 @@ HeroTypeWriter.propTypes = {
   theme: PropTypes.string.isRequired,
 };
 
-export default HeroTypeWriter
+export default HeroTypeWriter;
