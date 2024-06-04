@@ -9,9 +9,10 @@ import {
   FaUser,
   FaYoutube,
 } from "react-icons/fa6";
-import ExpenseApp from '../assets/images/projects';
+
+import ExpenseApp from '../assets/images/projects/expense.png';
 import JobListing from '../assets/images/projects/job-listing.png';
-import PasswordGen from '../assets/images/projects/password-generator';
+import PasswordGen from '../assets/images/projects/password-generator.png';
 
 
 
@@ -78,19 +79,19 @@ export const Menus = [
 
 export const ProjectsData = [
   {
-    id: `food-${Date.now()}`,
+    id: `expenseapp-${Date.now()}`,
     name: "Expense App",
     imgSrc: ExpenseApp,
     gitURL: "https://github.com/nolu-m",
   },
   {
-    id: `codepen-${Date.now()}`,
+    id: `joblisting-${Date.now()}`,
     name: "Job listing website",
     imgSrc: JobListing,
     gitURL: "https://github.com/nolu-m",
   },
   {
-    id: `openai-${Date.now()}`,
+    id: `passwordgenerator-${Date.now()}`,
     name: "Password generator",
     imgSrc: PasswordGen,
     gitURL: "https://github.com/nolu-m",

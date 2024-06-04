@@ -1,5 +1,5 @@
 import { Menus } from '../utils/helper'
-import { MenuItem } from '../components/MenuItem'
+import * as MenuItem from '../components/MenuItem'
 
 const Header = () => {
   return (
