@@ -1,42 +1,37 @@
 import PropTypes from "prop-types";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
+import useTheme from "./useTheme"
 
 
-const MenuItem = ({menu, index, theme}) => {
+const MenuItem = ({menu, index,}) => {
 const [isHovered, setIsHovered] = useState(false)
+const { theme } = useTheme(); // Use theme from context
 
     return (
-    <a 
+      <a 
       href={menu.uri} 
-        className={`w-12 h-12 rounded-full flex items-center jusyify-center 
-        group cursor-pointer hover:bg-gradient-to-br 
-        ${theme === 'theme2' ? 'hover:from-primary-green hover:to-secondary-green' : 'hover:from-primary-pink hover:to-secondary-pink relative'}`}
-        onMouseEnter={() => setIsHovered(true)}>
-        <menu.Icon
-          className={`text-texlight group-hover:text-bgPrimary text-xl`} />
-  
-        <motion.div className="absolute bg-white rounded-md px-6 py-2
-          -left-[140px] after:absolute after:-right-1 after:top-3 after:w-3 after:h-3
-          after:bg-white after:rotate-45"
-        style={{boxShadow: "inset 0px 0px 10px rgba(0,0,0,0.4)"}}>
-          <p className="text-bgPrimary">{menu?.name}</p>
-        </motion.div>
-  
-        <AnimatePresence>
-          {isHovered && (
-            <motion.div className="absolute bg-white rounded-md px-6 py-2
-              -left-[140px] after:absolute after:-right-1 after:top-3 after:w-3 after:h-3
-              after:bg-white after:rotate-45"
-                style={{ boxShadow: "inset 0px 0px 10px rgba(0,0,0,0.4)" }}
-              >
-              <p className="text-bgPrimary">{menu?.name}</p>
-            </motion.div>
-            
-          )}
-        </AnimatePresence>
-  
-  </a>
+      className={`w-12 h-12 rounded-full flex items-center justify-center 
+      group cursor-pointer hover:bg-gradient-to-br 
+      ${theme === 'theme2' ? 'hover:from-primary-green hover:to-secondary-green' : 'hover:from-primary-pink hover:to-secondary-pink'} relative`}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}>
+      <menu.Icon
+        className={`text-texlight group-hover:text-bgPrimary text-xl`} />
+    
+      <AnimatePresence>
+        {isHovered && (
+          <motion.div className="absolute bg-white rounded-md px-6 py-2 -left-[140px] 
+            after:absolute after:-right-1 after:top-3 after:w-3 after:h-3
+            after:bg-white after:rotate-45"
+              style={{ boxShadow: "inset 0px 0px 10px rgba(0,0,0,0.4)" }}
+            >
+            <p className="text-bgPrimary">{menu?.name}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </a>
+    
     
   )
 }
