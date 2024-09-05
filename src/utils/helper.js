@@ -13,6 +13,9 @@ import {
 import ExpenseApp from '../assets/images/projects/expense.png';
 import JobListing from '../assets/images/projects/job-listing.png';
 import PasswordGen from '../assets/images/projects/password-generator.png';
+import EduPalApp from '../assets/images/projects/edupal.png';
+import EcommerceApp from '../assets/images/projects/e-commerce.png';
+import Ayoba from '../assets/images/projects/ayoba.png';
 
 
 
@@ -78,6 +81,24 @@ export const Menus = [
 ];
 
 export const ProjectsData = [
+  {
+    id: `edupal-${Date.now()}`,
+    name: "EduPal App",
+    imgSrc: EduPalApp,
+    gitURL: "https://github.com/nolu-m",
+  },
+  {
+    id: `ayoba-${Date.now()}`,
+    name: "Ayoba App",
+    imgSrc: Ayoba,
+    gitURL: "https://github.com/nolu-m",
+  },
+  {
+    id: `e-commerce-${Date.now()}`,
+    name: "E-commerce App",
+    imgSrc: EcommerceApp,
+    gitURL: "https://github.com/nolu-m",
+  },
   {
     id: `expenseapp-${Date.now()}`,
     name: "Expense App",
