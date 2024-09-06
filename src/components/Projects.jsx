@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import Leaf1 from '../assets/images/Leaf1.png'
 import Leaf2 from '../assets/images/Leaf2.png'
 import { ProjectsData } from "../utils/helper"
+import { FaGithub } from "react-icons/fa"
 
 const Projects = () => {
     return (
@@ -15,7 +16,7 @@ const Projects = () => {
                     animate={{ opacity: 1, width: 200}}
                     exit={{ opacity: 0, width: 0}}
                     transition={{ delay: 0.4}}
-                    className="flex itmes-center justify-around w-52"
+                    className="flex items-center justify-around w-52"
                     >
                         <img src={Leaf1} className="w-6 h-auto object-contain" alt=""/>
                         <p className="text-transparent bg-clip-text bg-gradient-to-r from-pri">
@@ -26,7 +27,7 @@ const Projects = () => {
             </div>
             
             {/* main content */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 w-11/12">
                 <AnimatePresence>
                     {ProjectsData && ProjectsData.map((project, index) => (
                         <ProjectCard key={project.id} project={project} /> 
@@ -39,13 +40,26 @@ const Projects = () => {
     )
 }
 
-const ProjectCard = ({project}) => {
+const ProjectCard = ({project, theme}) => {
+    console.log("Current theme:", theme); // Check if theme is being passed correctly
+
     return (
         <motion.div key={project.id} className="overflow-hidden cursor-pointer relative rounded-md">
             <motion.img 
             whileHover={{ scale: 1.1}}
-            className="w-full h-full object-contain rounded-lg" src={project.imgSrc}/> 
+            className="w-full h-full object-contain rounded-lg" src={project.imgSrc}/>
+
+            <motion.div className="absolute inset-0 backdrop-blue-md bg-[rgba(0,0,0.6)] flex items-center justify-center flex-column gap-2">
+                <p className={`text-xl ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>
+                    {project?.name}
+                </p>
+                <a href={project?.gitURL} className="">
+                    <FaGithub className="text-3xl text-white hover:text-primary" />
+                </a>
+            </motion.div> 
         </motion.div>
+
+        
     )
 }
 export default Projects
