@@ -3,6 +3,7 @@ import Leaf1 from '../assets/images/Leaf1.png'
 import Leaf2 from '../assets/images/Leaf2.png'
 import { ProjectsData } from "../utils/helper"
 import { FaGithub } from "react-icons/fa"
+import useTheme from './useTheme';
 
 const Projects = () => {
     return (
@@ -41,7 +42,7 @@ const Projects = () => {
 }
 
 const ProjectCard = ({project, theme}) => {
-    console.log("Current theme:", theme); // Check if theme is being passed correctly
+    var { theme } = useTheme(); // Accessing the theme from context
 
     return (
         <motion.div key={project.id} className="overflow-hidden cursor-pointer relative rounded-md">
