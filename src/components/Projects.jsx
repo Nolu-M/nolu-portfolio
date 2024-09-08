@@ -60,12 +60,12 @@ const ProjectCard = ({project, theme}) => {
             />
 
             {isHoverred && (
-                <motion.div className="absolute inset-0 backdrop-blur-md bg-[rgba(0, 0, 0, 0.6)] flex items-center justify-center flex-column gap-2">
+                <motion.div className="absolute inset-0 backdrop-blur-md bg-[rgba(0, 0, 0, 0.6)] flex items-center justify-center flex-col gap-2">
                 <p className={`text-xl ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>
                     {project?.name}
                 </p>
                 <a href={project?.gitURL} className="">
-                    <FaGithub className="text-3xl text-white hover:text-primary" />
+                    <FaGithub className={`text-3xl ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`} />
                 </a>
             </motion.div> 
             )}

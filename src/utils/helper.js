@@ -1,15 +1,13 @@
 import {
   FaDiagramProject,
   FaEnvelope,
-  FaFacebookF,
   FaGithub,
   FaHouse,
   FaInstagram,
   FaLinkedinIn,
   FaRenren,
-  FaTwitter,
   FaUser,
-  FaYoutube,
+  FaX,
 } from "react-icons/fa6";
 
 import ExpenseApp from '../assets/images/projects/expense.png';
@@ -22,7 +20,7 @@ import Ayoba from '../assets/images/projects/ayoba.png';
 
 
 
-export const Socials = [
+/*export const Socials = [
   {
     id: `facebook-${Date.now()}`,
     Icon: FaFacebookF,
@@ -47,7 +45,7 @@ export const Socials = [
     uril: "",
     color: "#ff0000",
   },
-];
+];*/
 
 export const Contact = [
   {
@@ -64,7 +62,7 @@ export const Contact = [
   },
   {
     id: `twitter-${Date.now()}`,
-    Icon: FaTwitter,
+    Icon: FaX,
     uril: "https://twitter.com/nolumaxazana?t=OXBy18qR-BpgD-KidLaIJw&s=09",
     color: "#fff",
   },
