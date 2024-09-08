@@ -5,7 +5,7 @@ import useTheme from './useTheme';
 const Links = (theme) => {
     var { theme } = useTheme(); // Accessing the theme from context
     return (
-        <section id='links' className='flex items-center justify-center '>
+        <section id='contact' className='flex items-center justify-center '>
             <div className="w-full flex items-center justify-center py-24">
             <motion.div 
                 initial={{ opacity: 0, width: 0}}

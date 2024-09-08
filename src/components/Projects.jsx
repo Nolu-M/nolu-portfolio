@@ -6,8 +6,8 @@ import { FaGithub } from "react-icons/fa"
 import useTheme from './useTheme';
 import { useState } from "react"
 
-const Projects = (theme) => {
-    var { theme } = useTheme(); // Accessing the theme from context
+const Projects = () => {
+    const { theme } = useTheme(); // Accessing the theme from context
     return (
         <section id='projects'>
             <div className='flex items-center justify-center flex-col gap-12 my-12'>
@@ -22,7 +22,7 @@ const Projects = (theme) => {
                     className="flex items-center justify-around w-52"
                     >
                          {/*<img src={Leaf1} className="w-6 h-auto object-contain" alt=""/>*/}
-                        <p className={`text-transparent bg-clip-text text-3xl ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>
+                        <p className={`bg-clip-text text-3xl ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>
                             Projects
                         </p>
                         {/*<img src={Leaf2} className="w-6 h-auto object-contain" alt="" />*/}
