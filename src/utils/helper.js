@@ -4,8 +4,10 @@ import {
   FaFacebookF,
   FaGithub,
   FaHouse,
+  FaInstagram,
   FaLinkedinIn,
   FaRenren,
+  FaTwitter,
   FaUser,
   FaYoutube,
 } from "react-icons/fa6";
@@ -44,6 +46,39 @@ export const Socials = [
     Icon: FaYoutube,
     uril: "",
     color: "#ff0000",
+  },
+];
+
+export const Contact = [
+  {
+    id: `github-${Date.now()}`,
+    Icon: FaGithub,
+    uril: "https://github.com/Nolu-M",
+    color: "#fff",
+  },
+  {
+    id: `linkedin-${Date.now()}`,
+    Icon: FaLinkedinIn,
+    uril: "https://www.linkedin.com/in/nolubabalo-maxazana-4327b168/",
+    color: "#0072b1",
+  },
+  {
+    id: `twitter-${Date.now()}`,
+    Icon: FaTwitter,
+    uril: "https://twitter.com/nolumaxazana?t=OXBy18qR-BpgD-KidLaIJw&s=09",
+    color: "#fff",
+  },
+  {
+    id: `instagram-${Date.now()}`,
+    Icon: FaInstagram,
+    uril: "https://www.instagram.com/nolumxzn/?igshid=MzMyNGUyNmU2YQ%3D%3D",
+    color: "pink",
+  },
+  {
+    id: `email-${Date.now()}`,
+    Icon: FaEnvelope,
+    uril: "mailto:nolubabalomaxazana@gmail.com",
+    color: "gray",
   },
 ];
 
