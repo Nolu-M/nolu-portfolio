@@ -7,7 +7,7 @@ import useTheme from './useTheme';
 import { useState } from "react"
 
 const Projects = () => {
-    const { theme } = useTheme(); // Accessing the theme from context
+    var { theme } = useTheme(); // Accessing the theme from context
     return (
         <section id='projects'>
             <div className='flex items-center justify-center flex-col gap-12 my-12'>

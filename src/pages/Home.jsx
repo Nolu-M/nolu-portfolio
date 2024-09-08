@@ -15,7 +15,7 @@ const Home = () => {
     const { theme } = useTheme();
 
     return (
-        <div className={`${theme} min-h-screen`} >
+        <div className={`${theme} min-h-screen conainer mx-auto`} >
             <div className='conainer mx-auto'>
                 <div>
                     {/*<Header />*/}
