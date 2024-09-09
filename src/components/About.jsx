@@ -45,10 +45,19 @@ const About = () => {
                      {/* content */}
                      <div className="w-full px-8 flex flex-col gap-4 items-start justify-start">
                                 <p className="text-texlight text-base tracking-wide text-justify">
-                                Passionate software engineer with expertise in both front-end and back-end technologies, including JavaScript, PHP, Python, Flask, and React. 
-                                Proficient in cloud computing (Microsoft Azure), with a keen focus on building user-centered, scalable software solutions. 
-                                My background in microbiology has sharpened my analytical skills, and my recent upskilling in cybersecurity and data analytics enhances my problem-solving approach. 
-                                Eager to contribute to collaborative and innovative projects.
+                                I am a dedicated software engineer with a background in microbiology, which allows me to blend scientific rigor with innovative technology solutions. 
+                                My expertise spans both front-end and back-end development, and I’m proficient in languages like JavaScript, PHP, and Python. I have a particular passion for working with React, Flask, and cloud computing platforms like Microsoft Azure, where I’ve honed my ability to deploy scalable web applications. 
+                                With a strong interest in cybersecurity and data analytics, I bring an analytical mindset that enhances my approach to problem-solving and software development.
+                                </p>
+                                <p className="text-texlight text-base tracking-wide text-justify">
+                                Teaching and mentoring are also close to my heart. 
+                                As a Web Development Learning Assistant, I’ve had the opportunity to help others grow in their technical skills, conducting workshops in full-stack technologies like React and Node.js. 
+                                I take pride in guiding students through complex problem-solving scenarios and have also tailored English lessons for non-native speakers in my role as an online English teacher.
+                                </p>
+                                <p className="text-texlight text-base tracking-wide text-justify">
+                                My portfolio reflects my ability to create impactful projects, including Edu Pal, a hackathon-winning platform I developed to enhance the learning experience for high school students. 
+                                I’ve also developed advertising platforms and clinic management systems, demonstrating my versatility and creativity. I’m always eager to learn and expand my knowledge, with recent certifications in cybersecurity and Python development. 
+                                My blend of skills, enthusiasm for tech, and desire to make a difference drive me to be a dynamic force in the industry.
                                 </p>
                             </div>
                 </div>
