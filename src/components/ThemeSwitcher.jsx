@@ -17,7 +17,7 @@ const ThemeSwitcher = () => {
 
   return (
     <div className="container mx-auto">
-      <label className="switch relative inline-block w-10 h-6 bg-gray-300 rounded-full mt-4 ml-10">
+      <label className="switch relative inline-block w-10 h-6 bg-gray-300 rounded-full mt-4 ml-4">
         <input
           type="checkbox"
           onChange={toggleTheme}
