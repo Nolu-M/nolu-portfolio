@@ -22,7 +22,7 @@ const About = () => {
                     transition={{ delay: 0.4 }}
                     className='flex items-center justify-around w-52'
                     >
-                        <p className={`bg-clip ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>About</p>
+                        <p className={`bg-clip-text text-3xl ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>About</p>
                     </motion.div>
                 </div>
             
@@ -43,7 +43,7 @@ const About = () => {
                     </div>
 
                      {/* content */}
-                     <div className="w-full px-8 flex flex-col gap-4 items-start justify-start">
+                     <div className="w-full px-8 flex flex-col gap-2 items-start justify-start">
                                 <p className="text-texlight text-base tracking-wide text-justify">
                                 I am a dedicated software engineer with a background in microbiology, which allows me to blend scientific rigor with innovative technology solutions. 
                                 My expertise spans both front-end and back-end development, and I’m proficient in languages like JavaScript, PHP, and Python. I have a particular passion for working with React, Flask, and cloud computing platforms like Microsoft Azure, where I’ve honed my ability to deploy scalable web applications. 
@@ -59,6 +59,7 @@ const About = () => {
                                 I’ve also developed advertising platforms and clinic management systems, demonstrating my versatility and creativity. I’m always eager to learn and expand my knowledge, with recent certifications in cybersecurity and Python development. 
                                 My blend of skills, enthusiasm for tech, and desire to make a difference drive me to be a dynamic force in the industry.
                                 </p>
+                               
                             </div>
                 </div>
             </section>
