@@ -22,7 +22,7 @@ const About = () => {
                     transition={{ delay: 0.4 }}
                     className='flex items-center justify-around w-52'
                     >
-                        <p className={`bg-clip ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>About</p>
+                        <p className={`bg-clip-text text-3xl ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>About</p>
                     </motion.div>
                 </div>
             
@@ -43,13 +43,14 @@ const About = () => {
                     </div>
 
                      {/* content */}
-                     <div className="w-full px-8 flex flex-col gap-4 items-start justify-start">
+                     <div className="w-full px-8 flex flex-col gap-2 items-start justify-start">
                                 <p className="text-texlight text-base tracking-wide text-justify">
-                                Passionate software engineer with expertise in both front-end and back-end technologies, including JavaScript, PHP, Python, Flask, and React. 
+                                I am a passionate software engineer with expertise in both front-end and back-end technologies, including JavaScript, PHP, Python, Flask, and React. 
                                 Proficient in cloud computing (Microsoft Azure), with a keen focus on building user-centered, scalable software solutions. 
                                 My background in microbiology has sharpened my analytical skills, and my recent upskilling in cybersecurity and data analytics enhances my problem-solving approach. 
                                 Eager to contribute to collaborative and innovative projects.
                                 </p>
+                               
                             </div>
                 </div>
             </section>
