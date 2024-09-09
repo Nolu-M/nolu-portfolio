@@ -18,7 +18,7 @@ const Links = () => {
                 transition={{ delay: 0.4}}
                 className="flex-col items-center justify-around w-52"
             >
-                <p className={`bg-clip-text text-3xl ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>Contact Me</p>
+                <p className={`bg-clip-text text-3xl mb-6 ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>Contact Me</p>
                 <div className="mt-4 flex items-center justify-center gap-16 mt-16">
                     <AnimatePresence>
                         {Contact && Contact.map((item, index) => (
