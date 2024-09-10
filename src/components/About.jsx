@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import useTheme from './useTheme';
-import about from '../assets/images/hero.png'
+import about from '../assets/images/about.png'
 
 
 
@@ -27,16 +27,16 @@ const About = () => {
                 </div>
             
                 {/* main content */}
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full '>
+                <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full'>
                     {/* image */}
                     <div className="w-full flex items-center justify-center px-8">
-                        <div className={`w-full lg:w-96 p-[2px] rounded-md ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'} relative`}>
+                        <div className={`w-full lg:w-96 p-[2px] rounded-md ${theme === 'theme2' ? 'bg-primary-green' : 'bg-primary-pink'} relative`}>
                             <img 
                                 src={about}
-                                className="w-full rounded-md h-auto object-contain" 
+                                className="w-full rounded-md h-auto object-contain" alt="picture of me" 
                             />
 
-                            <div className={`absolute w-full h-full -top-3 -left-2 ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'} rounded-md
+                            <div className={`absolute w-full h-full -top-3 -left-2 ${theme === 'theme2' ? 'bg-primary-green' : 'bg-primary-pink'} rounded-md
                             blur-[5px] -z-10`}>
                             </div>
                         </div>
@@ -48,11 +48,6 @@ const About = () => {
                                 I am a dedicated software engineer with a background in microbiology, which allows me to blend scientific rigor with innovative technology solutions. 
                                 My expertise spans both front-end and back-end development, and I’m proficient in languages like JavaScript, PHP, and Python. I have a particular passion for working with React, Flask, and cloud computing platforms like Microsoft Azure, where I’ve honed my ability to deploy scalable web applications. 
                                 With a strong interest in cybersecurity and data analytics, I bring an analytical mindset that enhances my approach to problem-solving and software development.
-                                </p>
-                                <p className="text-texlight text-base tracking-wide text-justify">
-                                Teaching and mentoring are also close to my heart. 
-                                As a Web Development Learning Assistant, I’ve had the opportunity to help others grow in their technical skills, conducting workshops in full-stack technologies like React and Node.js. 
-                                I take pride in guiding students through complex problem-solving scenarios and have also tailored English lessons for non-native speakers in my role as an online English teacher.
                                 </p>
                                 <p className="text-texlight text-base tracking-wide text-justify">
                                 My portfolio reflects my ability to create impactful projects, including Edu Pal, a hackathon-winning platform I developed to enhance the learning experience for high school students. 
