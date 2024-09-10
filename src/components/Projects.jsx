@@ -1,6 +1,4 @@
 import { AnimatePresence, motion } from "framer-motion"
-import Leaf1 from '../assets/images/Leaf1.png'
-import Leaf2 from '../assets/images/Leaf2.png'
 import { ProjectsData } from "../utils/helper"
 import { FaGithub } from "react-icons/fa"
 import useTheme from './useTheme';
@@ -21,11 +19,9 @@ const Projects = () => {
                     transition={{ delay: 0.4}}
                     className="flex items-center justify-around w-52"
                     >
-                         {/*<img src={Leaf1} className="w-6 h-auto object-contain" alt=""/>*/}
                         <p className={`bg-clip-text text-3xl ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>
                             Projects
                         </p>
-                        {/*<img src={Leaf2} className="w-6 h-auto object-contain" alt="" />*/}
                 </motion.div>
             </div>
             
