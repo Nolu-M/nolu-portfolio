@@ -10,7 +10,7 @@ const Introduction = () => {
     const { theme } = useTheme(); // Use theme from context
 
     return (
-        <section id="home" className=' flex items-center justify-center flex-col gap-12 relative'>
+        <section id="home" className=' flex items-center justify-center flex-col gap-12 relative container mx-auto'>
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full'>
                 {/*container section*/}
 
