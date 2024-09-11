@@ -6,9 +6,7 @@ import About from '../components/About'
 import  useTheme  from '../components/useTheme'
 import ThemeSwitcher from '../components/ThemeSwitcher'
 import Header from '../components/Header'
-
-
-
+import Skills from '../components/Skills'
 
 
 const Home = () => {
@@ -23,6 +21,7 @@ const Home = () => {
                     <Header />
                     <Introduction />
                     <About />
+                    <Skills />
                     <Projects />
                     <Links />
                 </div>

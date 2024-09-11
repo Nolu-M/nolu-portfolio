@@ -16,7 +16,7 @@ import PasswordGen from '../assets/images/projects/password-generator.png';
 import EduPalApp from '../assets/images/projects/edupal.png';
 import EcommerceApp from '../assets/images/projects/e-commerce.png';
 import Ayoba from '../assets/images/projects/ayoba.png';
-
+import ArdaCitiMachine from '../assets/images/projects/machine.png'
 
 
 
@@ -124,6 +124,12 @@ export const ProjectsData = [
     id: `ayoba-${Date.now()}`,
     name: "Ayoba App",
     imgSrc: Ayoba,
+    gitURL: "https://github.com/nolu-m",
+  },
+  {
+    id: `machine-${Date.now()}`,
+    name: "ArdaCiti Machine",
+    imgSrc: ArdaCitiMachine,
     gitURL: "https://github.com/nolu-m",
   },
   {
