@@ -54,6 +54,7 @@ const ProjectCard = ({project, theme}) => {
             className="w-full h-full object-contain rounded-lg" 
             src={project.imgSrc}
             />
+            
 
             {isHoverred && (
                 <motion.div className="absolute inset-0 backdrop-blur-md bg-[rgba(0, 0, 0, 0.6)] flex items-center justify-center flex-col gap-2">
