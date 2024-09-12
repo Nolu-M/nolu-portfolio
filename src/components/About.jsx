@@ -47,7 +47,7 @@ const About = () => {
                                 <p className="text-texlight text-base tracking-wide text-justify">
                                 I am a dedicated software engineer with a background in microbiology, which allows me to blend scientific rigor with innovative technology solutions. 
                                 My expertise spans both front-end and back-end development, and I’m proficient in languages like JavaScript, PHP, and Python. I have a particular passion for working with React, Flask, and cloud computing platforms like Microsoft Azure, where I’ve honed my ability to deploy scalable web applications. 
-                                With a strong interest in cybersecurity and data analytics, I bring an analytical mindset that enhances my approach to problem-solving and software development.
+                                With a strong interest in cybersecurity and software development, I bring an analytical mindset that enhances my approach to problem-solving and software development.
                                 </p>
                                 <p className="text-texlight text-base tracking-wide text-justify">
                                 My portfolio reflects my ability to create impactful projects, including Edu Pal, a hackathon-winning platform I developed to enhance the learning experience for high school students. 
