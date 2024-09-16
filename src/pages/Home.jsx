@@ -17,8 +17,8 @@ const Home = () => {
             <div className='conainer mx-auto'>
                 <div>
                     {/*<Header />*/}
-                    <ThemeSwitcher />
                     <ParticlesContainer />
+                    <ThemeSwitcher />
                     <Header />
                     <Introduction />
                     <About />

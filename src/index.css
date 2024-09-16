@@ -80,6 +80,11 @@ body {
   }
 }
 
+.particle-container {
+  z-index: -1; /* or a higher value to ensure it's not hidden */
+}
+
+
 
 
 
