@@ -1,7 +1,9 @@
 import React from 'react'
 import useTheme from './useTheme';
 import { motion } from 'framer-motion';
-import { skillsData } from '../utils/helper'
+import SkillCard from './SkillCard';
+//import { skillsData } from '../utils/helper'
+
 
 
 const Skills = () => {
@@ -33,44 +35,54 @@ const Skills = () => {
                         <div className="w-full px-8 flex flex-col gap-2 items-start justify-start">
                         <p className={`bg-clip-text ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>My skills and experience</p>
                                 <p className="text-texlight text-base tracking-wide text-justify">
-                                I am a dedicated software engineer with a background in microbiology, which allows me to blend scientific rigor with innovative technology solutions. 
-                                My expertise spans both front-end and back-end development, and I’m proficient in languages like JavaScript, PHP, and Python. I have a particular passion for working with React, Flask, and cloud computing platforms like Microsoft Azure, where I’ve honed my ability to deploy scalable web applications. 
-                                With a strong interest in cybersecurity and software development, I bring an analytical mindset that enhances my approach to problem-solving and software development.
+                                I’m a passionate software engineer with a strong background in both front-end and back-end development. 
+                                I specialize in languages like JavaScript, Python, and PHP, and I’m proficient in frameworks such as React and Flask. My expertise extends to cloud computing, particularly with Microsoft Azure, where I’ve worked on deploying, scaling, and managing web apps. 
+                                I also have experience with SQL and PostgreSQL databases, UX/UI design, API integration, and tools like Docker and Git.
                                 </p>
                                 <p className="text-texlight text-base tracking-wide text-justify">
-                                My portfolio reflects my ability to create impactful projects, including Edu Pal, a hackathon-winning platform I developed to enhance the learning experience for high school students. 
-                                I’ve also developed advertising platforms and clinic management systems, demonstrating my versatility and creativity. I’m always eager to learn and expand my knowledge, with recent certifications in cybersecurity and Python development. 
-                                My blend of skills, enthusiasm for tech, and desire to make a difference drive me to be a dynamic force in the industry.
+                                In addition to my technical skills, I bring strong communication and problem-solving abilities. I’ve worked in cross-functional teams using agile methodologies, which has helped me adapt quickly, collaborate effectively, and deliver solutions that meet user needs. 
+                                My time as a Web Development Learning Assistant honed my ability to explain complex concepts, mentor others, and troubleshoot challenges efficiently.
+                                </p>
+                                <p className="text-texlight text-base tracking-wide text-justify">
+                                I’ve had the opportunity to contribute to exciting projects, including 'Edu Pal,' a hackathon-winning learning platform for high school students. 
+                                My background in microbiology has sharpened my analytical thinking, and my recent focus on cybersecurity and data analytics has further enhanced my problem-solving approach. 
+                                I’m always eager to learn and evolve, thriving in fast-paced, innovative environments that challenge me to grow.
                                 </p>
                                
                         </div>
 
                     {/* image */}
-                    <div className="w-full flex items-center justify-center px-8">
-                        <div className={`w-full lg:w-96 p-[2px] rounded-md ${theme === 'theme2' ? 'bg-primary-green' : 'bg-primary-pink'} relative`}>
-                            <div className="skills-container">
-                                {skillsData.map((skill, index) => (
-                                    <div key={index} className="skill-bar">
-                                    <span className="skill-name">{skill.name}</span>
-                                    <div className="bar-wrapper">
-                                        <div
-                                        className={`${theme === 'theme2' ? 'bg-primary-green' : 'bg-primary-pink'}`}
-                                        style={{ width: `${skill.level}%` }}
-                                        
-                                        >
-                                        <div className="larva-effect" />
-                                        </div>
-                                    </div>
-                                    </div>
-                                ))}
-                            </div>
-
-                            <div className={`absolute w-full h-full -top-3 -left-2 ${theme === 'theme2' ? 'bg-primary-green' : 'bg-primary-pink'} rounded-md
-                            blur-[5px] -z-10`}>
-                            </div>
-                        </div>
+                    <div className="w-full flex flex-col gap-4 items-center justify-center px-8">
+                       <SkillCard skill={"HTML 5"} percentage={"95%"} color={"#FF3F3F"} move={true}/>
+                       <SkillCard skill={"Tailwind CSS"} percentage={"90%"} color={"#33ff74"} />
+                       <SkillCard skill={"JavaScript"} percentage={"80%"} color={"#FFB900"} move={true}/>
+                       <SkillCard skill={"Python"} percentage={"70%"} color={"#14DB00"} />
+                       <SkillCard skill={"PostgreSQL"} percentage={"70%"} color={"#008FFF"} move={true}/>
+                       <SkillCard skill={"React"} percentage={"80%"} color={"#af7ac5"} />
                     </div>
-                </div>
+
+
+
+
+                    {/* image 
+                    <div className='w-full flex items-center justify-center px-8'>
+                        <div className={`w-4/5 mx-auto font-sans ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>
+                            {skillsData.map((skill, index) => (
+                                <div key={index} className="flex items-center my-4">
+                                <span className="w-36 text-lg">{skill.name}</span>
+                                <div className={`flex-grow ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'} rounded-full relative h-6 overflow-hidden`}>
+                                    <div
+                                    className={`h-full rounded-l-full ${theme === 'theme2' ? 'bg-primary-green' : 'bg-primary-pink'} transition-all duration-1000 ease-in-out relative`}
+                                    style={{ width: `${skill.level}%` }}
+                                    >
+                                    <div className="absolute top-0 left-0 w-[200%] h-full bg-[radial-gradient(circle,rgba(255,255,255,0.3)_0%,rgba(0,0,0,0)_70%)] animate-larva"></div>
+                                    </div>
+                                </div>
+                                </div>
+                            ))}
+                            </div>
+                        </div> */}
+                    </div>
             </section>
             </div>
         </section>
