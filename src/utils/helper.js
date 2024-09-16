@@ -158,3 +158,17 @@ export const ProjectsData = [
   },
  
 ];
+
+export const skillsData = [
+  { name: "Photoshop", level: 100 },
+  { name: "Illustrator", level: 90 },
+  { name: "InDesign", level: 80 },
+  { name: "After Effects", level: 70 },
+  { name: "Premiere", level: 60 },
+  { name: "DreamWeaver", level: 50 },
+  { name: "Flash (animation)", level: 40 },
+  { name: "HTML5/CSS3", level: 90 },
+  { name: "jQuery", level: 80 },
+  { name: "WordPress (theme)", level: 70 },
+  { name: "ZenCart (theme)", level: 30 },
+];
