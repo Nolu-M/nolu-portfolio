@@ -7,7 +7,7 @@ import  useTheme  from '../components/useTheme'
 import ThemeSwitcher from '../components/ThemeSwitcher'
 import Header from '../components/Header'
 import Skills from '../components/Skills'
-
+import ParticlesContainer from '../components/ParticlesContainer'
 
 const Home = () => {
     const { theme } = useTheme();
@@ -18,6 +18,7 @@ const Home = () => {
                 <div>
                     {/*<Header />*/}
                     <ThemeSwitcher />
+                    <ParticlesContainer />
                     <Header />
                     <Introduction />
                     <About />

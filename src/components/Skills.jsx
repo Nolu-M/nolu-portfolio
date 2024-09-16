@@ -2,7 +2,7 @@ import React from 'react'
 import useTheme from './useTheme';
 import { motion } from 'framer-motion';
 import SkillCard from './SkillCard';
-//import { skillsData } from '../utils/helper'
+import { skillsData } from '../utils/helper'
 
 
 
@@ -39,19 +39,11 @@ const Skills = () => {
                                 I specialize in languages like JavaScript, Python, and PHP, and I’m proficient in frameworks such as React and Flask. My expertise extends to cloud computing, particularly with Microsoft Azure, where I’ve worked on deploying, scaling, and managing web apps. 
                                 I also have experience with SQL and PostgreSQL databases, UX/UI design, API integration, and tools like Docker and Git.
                                 </p>
-                                <p className="text-texlight text-base tracking-wide text-justify">
-                                In addition to my technical skills, I bring strong communication and problem-solving abilities. I’ve worked in cross-functional teams using agile methodologies, which has helped me adapt quickly, collaborate effectively, and deliver solutions that meet user needs. 
-                                My time as a Web Development Learning Assistant honed my ability to explain complex concepts, mentor others, and troubleshoot challenges efficiently.
-                                </p>
-                                <p className="text-texlight text-base tracking-wide text-justify">
-                                I’ve had the opportunity to contribute to exciting projects, including 'Edu Pal,' a hackathon-winning learning platform for high school students. 
-                                My background in microbiology has sharpened my analytical thinking, and my recent focus on cybersecurity and data analytics has further enhanced my problem-solving approach. 
-                                I’m always eager to learn and evolve, thriving in fast-paced, innovative environments that challenge me to grow.
-                                </p>
+                                
                                
                         </div>
 
-                    {/* image */}
+                    {/* image 
                     <div className="w-full flex flex-col gap-4 items-center justify-center px-8">
                        <SkillCard skill={"HTML 5"} percentage={"95%"} color={"#FF3F3F"} move={true}/>
                        <SkillCard skill={"Tailwind CSS"} percentage={"90%"} color={"#33ff74"} />
@@ -59,12 +51,12 @@ const Skills = () => {
                        <SkillCard skill={"Python"} percentage={"70%"} color={"#14DB00"} />
                        <SkillCard skill={"PostgreSQL"} percentage={"70%"} color={"#008FFF"} move={true}/>
                        <SkillCard skill={"React"} percentage={"80%"} color={"#af7ac5"} />
-                    </div>
+                    </div>*/}
 
 
 
 
-                    {/* image 
+                    {/* image */}
                     <div className='w-full flex items-center justify-center px-8'>
                         <div className={`w-4/5 mx-auto font-sans ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>
                             {skillsData.map((skill, index) => (
@@ -81,7 +73,7 @@ const Skills = () => {
                                 </div>
                             ))}
                             </div>
-                        </div> */}
+                        </div> 
                     </div>
             </section>
             </div>

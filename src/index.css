@@ -14,6 +14,7 @@ body {
   height: 100vh;
   font-family: "Croissant One", "cursive";
   display: flex;
+  background: #020010;
   flex-direction: column;
   align-items: center;
   justify-content: start;
