@@ -21,68 +21,6 @@ body {
 }
 
 
-* {
-  scroll-behavior: smooth;
-}
-
-.skills-container {
-  width: 80%;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-  color: #00ffcc;
-}
-
-.skill-bar {
-  margin: 15px 0;
-  display: flex;
-  align-items: center;
-}
-
-.skill-name {
-  width: 150px;
-  font-size: 18px;
-}
-
-.bar-wrapper {
-  flex-grow: 1;
-  background: rgba(0, 255, 255, 0.1);
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-  height: 20px;
-}
-
-.bar-fill {
-  background: linear-gradient(270deg, #00ffcc, #0044cc);
-  height: 100%;
-  border-radius: 15px 0 0 15px;
-  position: relative;
-  overflow: hidden;
-  transition: width 2s ease-in-out;
-}
-
-.larva-effect {
-  position: absolute;
-  width: 200%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, rgba(0,0,0,0) 70%);
-  animation: larva 4s linear infinite;
-}
-
-@keyframes larva {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-.particle-container {
-  z-index: -1; /* or a higher value to ensure it's not hidden */
-}
 
 
 
