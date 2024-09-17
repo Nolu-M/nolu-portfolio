@@ -1,13 +1,41 @@
 import React from 'react'
 import useTheme from './useTheme';
 import { motion } from 'framer-motion';
-import SkillCard from './SkillCard';
-import { skillsData } from '../utils/helper'
+import Slider from 'react-slick';
+import { FaJsSquare, FaReact, FaNodeJs } from 'react-icons/fa';
+
+
 
 
 
 const Skills = () => {
     var { theme } = useTheme(); // Accessing the theme from context
+
+    // Slick slider settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true
+  };
+
+  const skills = [
+    {
+      name: 'Javascript',
+      icon: <FaJsSquare size={50} color="#F7DF1E" />,
+    },
+    {
+      name: 'React',
+      icon: <FaReact size={50} color="#61DAFB" />,
+    },
+    {
+      name: 'Node.js',
+      icon: <FaNodeJs size={50} color="#3C873A" />,
+    },
+  ];
+
     return (
         <section id='skills'>
             <div className='container mx-auto'>
@@ -29,51 +57,21 @@ const Skills = () => {
                 </div>
             
                 {/* main content */}
-                <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 w-full'>
+                <div className='grid grid-cols-1 lg:grid-cols-1 gap-4 w-full'>
 
-                     {/* content */}
-                        <div className="w-full px-8 flex flex-col gap-2 items-start justify-start">
-                        <p className={`bg-clip-text ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>My skills and experience</p>
-                                <p className="text-texlight text-base tracking-wide text-justify">
-                                I’m a passionate software engineer with a strong background in both front-end and back-end development. 
-                                I specialize in languages like JavaScript, Python, and PHP, and I’m proficient in frameworks such as React and Flask. My expertise extends to cloud computing, particularly with Microsoft Azure, where I’ve worked on deploying, scaling, and managing web apps. 
-                                I also have experience with SQL and PostgreSQL databases, UX/UI design, API integration, and tools like Docker and Git.
-                                </p>
-                                
-                               
-                        </div>
-
-                    {/* image 
-                    <div className="w-full flex flex-col gap-4 items-center justify-center px-8">
-                       <SkillCard skill={"HTML 5"} percentage={"95%"} color={"#FF3F3F"} move={true}/>
-                       <SkillCard skill={"Tailwind CSS"} percentage={"90%"} color={"#33ff74"} />
-                       <SkillCard skill={"JavaScript"} percentage={"80%"} color={"#FFB900"} move={true}/>
-                       <SkillCard skill={"Python"} percentage={"70%"} color={"#14DB00"} />
-                       <SkillCard skill={"PostgreSQL"} percentage={"70%"} color={"#008FFF"} move={true}/>
-                       <SkillCard skill={"React"} percentage={"80%"} color={"#af7ac5"} />
-                    </div>*/}
-
-
-
-
-                    {/* image */}
-                    <div className='w-full flex items-center justify-center px-8'>
-                        <div className={`w-4/5 mx-auto font-sans ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'}`}>
-                            {skillsData.map((skill, index) => (
-                                <div key={index} className="flex items-center my-4">
-                                <span className="w-36 text-lg">{skill.name}</span>
-                                <div className={`flex-grow ${theme === 'theme2' ? 'text-primary-green' : 'text-primary-pink'} rounded-full relative h-6 overflow-hidden`}>
-                                    <div
-                                    className={`h-full rounded-l-full ${theme === 'theme2' ? 'bg-primary-green' : 'bg-primary-pink'} transition-all duration-1000 ease-in-out relative`}
-                                    style={{ width: `${skill.level}%` }}
-                                    >
-                                    <div className="absolute top-0 left-0 w-[200%] h-full bg-[radial-gradient(circle,rgba(255,255,255,0.3)_0%,rgba(0,0,0,0)_70%)] animate-larva"></div>
-                                    </div>
-                                </div>
-                                </div>
-                            ))}
+                <div className="skills-section">
+                    <div className="skills-slider">
+                        <Slider {...settings}>
+                        {skills.map((skill, index) => (
+                            <div className="skill-card" key={index}>
+                            {skill.icon}
+                            <h3>{skill.name}</h3>
                             </div>
-                        </div> 
+                        ))}
+                        </Slider>
+                    </div>
+    </div>
+                        
                     </div>
             </section>
             </div>
