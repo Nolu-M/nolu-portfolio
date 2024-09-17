@@ -1,14 +1,14 @@
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim"; // Keep using the slim package for bundle size optimization.
+import useTheme from './useTheme'; // Import useTheme hook to access the theme
 
 const ParticlesContainer = (props) => {
+  const { theme } = useTheme(); // Access the theme from context
   const [init, setInit] = useState(false);
 
-  // This should be run only once per application lifetime.
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      // Use loadSlim for reduced bundle size, but you could swap this for loadFull if needed.
       await loadSlim(engine);
     }).then(() => {
       setInit(true);
@@ -19,13 +19,13 @@ const ParticlesContainer = (props) => {
     console.log(container);
   };
 
-  // Define the particles options, now updated with the colors and options from the second code.
+  // Define the particles options with dynamic colors based on the theme
   const options = useMemo(
     () => ({
-      fullScreen: { enable: true }, // Enable full-screen mode like in the second code.
+      fullScreen: { enable: true },
       background: {
         color: {
-          value: "", // You can adjust the background color if needed.
+          value: "", // Adjust if needed
         },
       },
       fpsLimit: 120,
@@ -33,40 +33,40 @@ const ParticlesContainer = (props) => {
         events: {
           onClick: {
             enable: true,
-            mode: "repulse", // Kept the "repulse" mode on click from the first code.
+            mode: "repulse",
           },
           onHover: {
             enable: true,
-            mode: "grab", // Using "grab" like in the first code, but you can change it.
+            mode: "grab",
           },
-          resize: true, // Added resize support from the second code.
+          resize: true,
         },
         modes: {
           push: {
-            quantity: 90, // Added push mode from the second code.
+            quantity: 90,
           },
           repulse: {
             distance: 200,
             duration: 0.4,
           },
           grab: {
-            distance: 150, // Grab mode as defined in the first code.
+            distance: 150,
           },
         },
       },
       particles: {
         color: {
-          value: "#e68e2e", // Color from the second code.
+          value: theme === 'theme2' ? "#00cc99" : "#ff3385", // Dynamically set particle color based on theme
         },
         links: {
-          color: "#f5d393", // Links color from the second code.
+          color: theme === 'theme2' ? "#00b386" : "#ff0066", // Dynamically set link color based on theme
           distance: 150,
           enable: true,
           opacity: 0.5,
           width: 1,
         },
         collisions: {
-          enable: true, // Enable collisions from the second code.
+          enable: true,
         },
         move: {
           direction: "none",
@@ -74,30 +74,30 @@ const ParticlesContainer = (props) => {
           outModes: {
             default: "bounce",
           },
-          random: true, // Keep random movement from the first code.
+          random: true,
           speed: 1,
           straight: false,
         },
         number: {
           density: {
             enable: true,
-            area: 800, // Updated area from the second code.
+            area: 800,
           },
-          value: 150, // Particle count remains from the first code.
+          value: 150,
         },
         opacity: {
-          value: 0.5, // Opacity from the second code.
+          value: 0.5,
         },
         shape: {
-          type: "circle", // Keep the "circle" shape.
+          type: "circle",
         },
         size: {
-          value: { min: 1, max: 5 }, // Updated size range from the second code.
+          value: { min: 1, max: 5 },
         },
       },
       detectRetina: true,
     }),
-    [],
+    [theme], // Add theme as a dependency so that options update when the theme changes
   );
 
   return <Particles id={props.id} init={particlesLoaded} options={options} />;
