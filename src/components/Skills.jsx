@@ -23,8 +23,8 @@ const Skills = () => {
 
   const skills = [
     {
-      name: 'Javascript',
-      icon: <FaJsSquare size={50} color="#F7DF1E" />,
+      name: 'Git',
+      icon: <FaGit size={50} color="#F05033" />, 
     },
     {
       name: 'React',
@@ -36,29 +36,20 @@ const Skills = () => {
     },
     {
       name: 'Css3',
-      icon: <FaCss3 size={50} color="#1572B6" />, // CSS3 blue
+      icon: <FaCss3 size={50} color="#1572B6" />, 
+    },
+    {
+      name: 'Javascript',
+      icon: <FaJsSquare size={50} color="#F7DF1E" />,
+    },
+    {
+      name: 'HTML',
+      icon: <FaHtml5 size={50} color="#E34F26" />, 
     },
     {
       name: 'Python',
-      icon: <FaPython size={50} color="#3776AB" />, // Python blue
+      icon: <FaPython size={50} color="#3776AB" />, 
     },
-    {
-      name: 'HTML',
-      icon: <FaHtml5 size={50} color="#E34F26" />, // HTML5 orange
-    },
-    {
-      name: 'Git',
-      icon: <FaGit size={50} color="#F05033" />, // Git orange
-    },
-    {
-      name: 'Flask',
-      icon: <FaFlask size={50} color="#ffffff" />, // Flask black
-    },
-    {
-      name: 'HTML',
-      icon: <FaHtml5 size={50} color="#E34F26" />, // HTML5 orange
-    },
-    
   ];
 
     return (
