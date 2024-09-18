@@ -2,7 +2,7 @@ import React from 'react'
 import useTheme from './useTheme';
 import { motion } from 'framer-motion';
 import Slider from 'react-slick';
-import { FaJsSquare, FaReact, FaNodeJs } from 'react-icons/fa';
+import { FaJsSquare, FaReact, FaNodeJs, FaCss3, FaPython, FaHtml5, FaGit, FaFlask } from 'react-icons/fa';
 
 
 
@@ -34,6 +34,31 @@ const Skills = () => {
       name: 'Node.js',
       icon: <FaNodeJs size={50} color="#3C873A" />,
     },
+    {
+      name: 'Css3',
+      icon: <FaCss3 size={50} color="#1572B6" />, // CSS3 blue
+    },
+    {
+      name: 'Python',
+      icon: <FaPython size={50} color="#3776AB" />, // Python blue
+    },
+    {
+      name: 'HTML',
+      icon: <FaHtml5 size={50} color="#E34F26" />, // HTML5 orange
+    },
+    {
+      name: 'Git',
+      icon: <FaGit size={50} color="#F05033" />, // Git orange
+    },
+    {
+      name: 'Flask',
+      icon: <FaFlask size={50} color="#ffffff" />, // Flask black
+    },
+    {
+      name: 'HTML',
+      icon: <FaHtml5 size={50} color="#E34F26" />, // HTML5 orange
+    },
+    
   ];
 
     return (
