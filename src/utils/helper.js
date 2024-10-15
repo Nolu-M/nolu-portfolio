@@ -128,7 +128,7 @@ export const ProjectsData = [
     id: `data-${Date.now()}`,
     name: "Data Analytics - Candidates Score Cards",
     imgSrc: Data,
-    gitURL: "https://app.powerbi.com/groups/me/reports/0911c2ba-976d-4ee5-857e-252c099af07b/40d2bcd41a5f22d4915c?experience=power-bi&ownerId=8647d4d1-04d0-4c1a-8a4f-bf49d3e82ad6&referrer=embed.appsource",
+    gitURL: "https://app.powerbi.com/links/cDMwmdQL2d?ctid=a3f14f21-237f-4028-b978-425eb768a716&pbi_source=linkShare",
   },
   {
     id: `ayoba-${Date.now()}`,
