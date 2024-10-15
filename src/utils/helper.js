@@ -20,6 +20,7 @@ import EduPalApp from '../assets/images/projects/edupal.png';
 import EcommerceApp from '../assets/images/projects/e-commerce.png';
 import Ayoba from '../assets/images/projects/ayoba.png';
 import ArdaCitiMachine from '../assets/images/projects/machine.png'
+import Data from '../assets/images/projects/data.png'
 
 
 
@@ -122,6 +123,12 @@ export const ProjectsData = [
     name: "EduPal App",
     imgSrc: EduPalApp,
     gitURL: "https://github.com/nolu-m",
+  },
+  {
+    id: `data-${Date.now()}`,
+    name: "Data Analytics - Candidates Score Cards",
+    imgSrc: Data,
+    gitURL: "https://app.powerbi.com/groups/me/reports/0911c2ba-976d-4ee5-857e-252c099af07b/40d2bcd41a5f22d4915c?experience=power-bi&ownerId=8647d4d1-04d0-4c1a-8a4f-bf49d3e82ad6&referrer=embed.appsource",
   },
   {
     id: `ayoba-${Date.now()}`,
