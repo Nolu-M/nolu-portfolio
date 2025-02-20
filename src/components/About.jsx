@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import useTheme from './useTheme';
-import about from '../assets/images/about.png'
+import about from '../assets/images/afrotech.jpg'
 
 
 
